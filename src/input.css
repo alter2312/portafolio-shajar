@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/montserrat/Montserrat-Regular.ttf") format("ttf"),
+    url("font/montserrat/Montserrat-EstraBold.ttf") format("ttf"),
+    url("font/montserrat/Montserrat-Bold.ttf") format("ttf");
+}
+a {
+  text-decoration: none;
+}
+:root {
+  color-scheme: light dark;
+}
+.light-dark-active {
+  background-color: #101010;
+}
+
+.light-dark::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  background: #210c69;
+  transition: transform 0.3s;
+}
+.light-dark-active::before {
+  background-color: #210c69;
+  transform: translateX(100%);
+}
+.link-nav {
+  position: relative;
+}
+.link-nav::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  bottom: 0;
+  height: 3px;
+  background-color: #210c69;
+  transition: width 0.3s ease;
+}
+.link-nav:hover::before {
+  width: 100%;
+}
+.radius-full {
+  border-radius: 100%;
+}
+.link-linkedin {
+  color: #0077b5;
+}
+.link-whatsapp {
+  color: #25d366;
+}
+.link-instagram {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.link-whatsapp:hover {
+  background-color: #25d366;
+  color: #f1f1f1;
+}
+.link-linkedin:hover {
+  background-color: #0077b5;
+  color: #f1f1f1;
+}
+.link-instagram:hover {
+  color: #f1f1f1;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+* {
+  transition: background 0.3s;
+}
+.dark-mode .content {
+  background: #0a0a0a;
+}
+.dark-mode .content:nth-child(2n) {
+  background: #101010;
+}
+.dark-mode .content :is(h1, h2, h3, h4, h5, h6) {
+  color: #f1f1f1;
+}
+.dark-mode .content p {
+  color: #9686ff;
+}
+.dark-mode {
+  color: #f1f1f1;
+}
+
+.dark-mode .fondo-dark {
+  background-color: #285aeb;
+}
+.dark-mode header nav a {
+  color: #f1f1f1;
+}
+.dark-mode header nav a::before {
+  background-color: #9686ff;
+}
+.dark-mode header h1 {
+  color: #f1f1f1;
+}
+.card {
+  box-shadow: 10px 10px 10px #343434;
+  border: none;
+}
+.dark-mode .card {
+  box-shadow: 10px 10px 10px #210c69;
+}
