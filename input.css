@@ -126,3 +126,18 @@ a {
 .dark-mode .card {
   box-shadow: 10px 10px 10px #210c69;
 }
+figure .figure {
+  max-height: 3rem;
+}
+#container-img {
+  height: 80vh;
+}
+.figure {
+  max-height: 50vh;
+  margin: 2rem 0;
+}
+.figure .img {
+  width: 100%; /* hace que la imagen se adapte al ancho del contenedor */
+  height: 100%; /* hace que la imagen se adapte al alto del contenedor */
+  object-fit: cover; /* hace que la imagen se ajuste al contenedor sin deformarse */
+}

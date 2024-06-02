@@ -16,7 +16,7 @@
     <header class=" fixed w-full h-16 z-50 overflow-hidden text-neutral-800 flex justify-center ">
         <div id="fondo-header" class="absolute  top-0 w-screen h-full filter blur-xl bg-neutral-50"></div>
         <nav class="flex items-center justify-between w-11/12 h-full px-20 relative [&_*] z-10">
-            <h1 class="font-bold text-2xl">Shajar <span class="text-blue-gem-800 font-extrabold">Olsztyn</span></h1>
+            <h1 class="font-bold text-2xl ">Shajar <span class="text-blue-gem-800 font-extrabold">Olsztyn</span></h1>
             <ol class="flex gap-10 ">
                 <li><a href="" class="link-nav font-extrabold ">Inicio</a></li>
                 <li><a href="" class="link-nav font-extrabold ">Sobre Mi</a></li>
@@ -54,24 +54,29 @@
             </section>
         </section>
         <section
-            class="content w-screen h-screen flex flex-col items-center  justify-center gap-20  box-border py-16 bg-neutral-100 ">
+            class="content overflow-auto relative w-screen h-auto flex flex-col items-center  justify-center  box-border py-16 bg-neutral-100 ">
             <h2 class="text-3xl font-extrabold text-neutral-950">Algunos <span class="text-blue-gem-800">Trabajos</span>
             </h2>
-            <section class="w-screen h-3/5 flex justify-evenly">
-                <figure class="overflow-hidden  rounded-3xl w-1/4  h-full flex flex-col  card items-center">
-                    <h3 class="absolute">Hola</h3>
-                    <img src="img/foto-4.jpg" class="object-cover w-full h-full hover:scale-110 transition 1s" alt="">
+            <section
+                class="relative  pt-32 w-screen h-3/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center grid"
+                id="container-img">
+
+                <figure class=" figure overflow-hidden  rounded-3xl w-4/5 h-full  flex flex-col  card items-center">
+                    <img src="img/foto-1.jpg" class=" img object-cover w-full h-full hover:scale-110 transition 1s"
+                        alt="">
                 </figure>
-                <figure class="overflow-hidden  rounded-3xl  w-1/4 h-full flex flex-col card  items-center">
-                    <h3 class="absolute">Hola</h3>
-                    <img src="img/foto-2.jpg" class="object-cover w-full h-full hover:scale-110 transition 1s" alt="">
+                <figure class=" figure overflow-hidden  rounded-3xl  w-4/5 h-full  flex flex-col card  items-center">
+                    <img src="img/foto-2.jpg" class=" img object-cover w-full h-full hover:scale-110 transition 1s"
+                        alt="">
                 </figure>
-                <figure class="overflow-hidden  rounded-3xl  w-1/4 h-full flex flex-col  card items-center">
-                    <h3 class="absolute">Hola</h3>
-                    <img src="img/foto-3.jpg" class="object-cover w-full h-full hover:scale-110 transition 1s" alt="">
+                <figure class=" figure overflow-hidden  rounded-3xl  w-4/5  h-full flex flex-col  card items-center">
+                    <img src="img/foto-3.jpg" class=" img object-cover w-full h-full hover:scale-110 transition 1s"
+                        alt="">
                 </figure>
             </section>
-            <a href="" class="text-neutral-50 text-2xl font-bold px-16 py-6 rounded-full bg-blue-gem-900 ">Ver Mas</a>
+
+            <button id="btn-img" class="text-neutral-50 text-2xl font-bold px-16 py-6 rounded-full bg-blue-gem-900 ">Ver
+                Mas</button>
         </section>
         <!-- <section class="w-screen h-screen flex items-center justify-center bg-neutral-900"></section> -->
     </main>
