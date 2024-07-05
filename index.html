@@ -6,82 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <link href="./output.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cea33d77ef.js" crossorigin="anonymous"></script>
-
 </head>
 
-<body class="overflow-x-hidden ">
-    <header class=" fixed w-full h-16 z-50 overflow-hidden text-neutral-800 flex justify-center ">
-        <div id="fondo-header" class="absolute  top-0 w-screen h-full filter blur-xl bg-neutral-50"></div>
-        <nav class="flex items-center justify-between w-11/12 h-full px-20 relative [&_*] z-10">
-            <h1 class="font-bold text-2xl ">Shajar <span class="text-blue-gem-800 font-extrabold">Olsztyn</span></h1>
-            <ol class="flex gap-10 ">
-                <li><a href="" class="link-nav font-extrabold ">Inicio</a></li>
-                <li><a href="" class="link-nav font-extrabold ">Sobre Mi</a></li>
-                <li><a href="" class="link-nav font-extrabold ">Proyectos</a></li>
-                <li><a href="" class="link-nav font-extrabold ">Contacto</a></li>
+<body class="overflow-x-hidden">
+    <header class="fixed w-full h-16 z-50 overflow-hidden text-neutral-800 flex justify-center">
+        <div id="fondo-header" class="absolute top-0 w-screen h-full filter blur-xl bg-neutral-50"></div>
+        <nav class="flex items-center justify-between w-11/12 h-full px-20 relative z-10">
+            <h1 class="font-bold text-2xl">Shajar <span class="text-blue-gem-800 font-extrabold">Olsztyn</span></h1>
+            <ol class="flex gap-10">
+                <li><a href="#inicio" class="link-nav font-extrabold">Inicio</a></li>
+                <li><a href="#sobre-mi" class="link-nav font-extrabold">Sobre Mi</a></li>
+                <li><a href="#proyecto" class="link-nav font-extrabold">Proyectos</a></li>
+                <li><a href="#instituto" class="link-nav font-extrabold">Institución</a></li>
+                <li><a href="#contacto" class="link-nav font-extrabold">Contacto</a></li>
             </ol>
-            <button class="light-dark w-16  h-8 bg-neutral-300 relative overflow-hidden rounded-3xl flex"></button>
+            <button class="light-dark w-16 h-8 bg-neutral-300 relative overflow-hidden rounded-3xl flex"></button>
         </nav>
     </header>
-    <main class="overflowx-hidden">
-        <section
-            class="content w-screen h-screen flex items-center flex-col gap-10 justify-center bg-neutral-150 text-neutral-950 bg-neutral-200">
-            <article class="flex items-center flex-col ">
+
+    <main class="overflow-x-hidden">
+        <section id="inicio"
+            class="content w-screen h-screen flex items-center flex-col gap-10 justify-center text-neutral-950 bg-neutral-200">
+            <article class="flex items-center flex-col">
                 <h2 class="font-montserrat text-5xl font-semibold text-center mb-4 flex flex-col gap-3"> Shajar Olsztyn
-                    <br><span class="font-bold text-blue-gem-700 text-6xl ">DISEÑADOR
-                        GRÁFICO</span>
+                    <br><span class="font-bold text-blue-gem-700 text-6xl">DISEÑADOR GRÁFICO</span>
                 </h2>
                 <p class="text-center text-3xl text-blue-gem-950 font-extrabold">El diseño es el puente entre la
-                    imaginación y la
-                    realidad.</p>
+                    imaginación y la realidad.</p>
             </article>
-            <section class="overflow-visible w-2/5 h-20 [&>A]: text-3xl  flex justify-center gap-10 ">
-                <a href=""
-                    class=" link-linkedin  radius-full text-center py-12 px-10 flex items-center justify-center transition duration-200 ease-linear ">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href=""
-                    class=" link-whatsapp  radius-full text-center py-12 px-10 flex items-center justify-center transition duration-200 ease-linear ">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href=""
-                    class=" link-instagram radius-full text-center py-12 px-10 flex items-center justify-center transition duration-200 ease-linear ">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <section class="w-2/5 h-20 flex justify-center gap-10 text-3xl">
+                <a href="https://www.linkedin.com/in/shajar-alejandro-olsztyn-de-fleitas-167667249/" target="_blank"
+                    class="link-linkedin radius-full py-12 px-10 flex items-center justify-center transition duration-200 ease-linear"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://wa.me/59892402089" target="_blank"
+                    class="link-whatsapp radius-full py-12 px-10 flex items-center justify-center transition duration-200 ease-linear"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dumb_cas?igsh=cWxwaHN2cmo0OTUw" target="_blank"
+                    class="link-instagram radius-full py-12 px-10 flex items-center justify-center transition duration-200 ease-linear"><i
+                        class="fab fa-instagram"></i></a>
             </section>
         </section>
-        <section
-            class="content overflow-auto relative w-screen h-auto flex flex-col items-center  justify-center  box-border py-16 bg-neutral-100 ">
-            <h2 class="text-3xl font-extrabold text-neutral-950">Algunos <span class="text-blue-gem-800">Trabajos</span>
-            </h2>
-            <section
-                class="relative  pt-32 w-screen h-3/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center grid"
+
+        <section id="sobre-mi"
+            class="content w-screen h-screen flex flex-col justify-center items-center py-10 bg-neutral-100 gap-10">
+            <h3 class="text-3xl font-extrabold text-neutral-950">Sobre <span class="text-blue-gem-800">mi</span></h3>
+            <article class="w-screen h-4/5 flex justify-evenly items-center flex-wrap flex-row">
+                <p class="w-2/5 text-xl">Soy estudiante de diseño gráfico y fotografía. Me especializo en la creación de
+                    soluciones visuales atractivas y funcionales. Mi pasión por la fotografía se centra en capturar
+                    momentos auténticos y emotivos, ya sea en eventos, retratos o paisajes. Mi objetivo es transformar
+                    ideas en realidades visuales impactantes, siempre buscando nuevos desafíos y oportunidades para
+                    crecer en mi campo. Gracias por visitar mi portafolio. Espero que disfrutes de mi trabajo y podamos
+                    colaborar en futuros proyectos.</p>
+                <img src="img/foto-shajar.png" class="perfil w-1/5 h-1/2" alt="Foto de Shajar Olsztyn">
+            </article>
+        </section>
+
+        <section id="instituto"
+            class="relative content w-screen h-screen flex flex-col justify-center items-center py-10 gap-20 bg-neutral-200">
+            <h3 class="text-3xl font-extrabold text-neutral-950 flex items-center justify-center flex-col">
+                <div><span class="text-blue-gem-800">Insti</span>tuto</div>
+            </h3>
+            <article class="w-screen px-10 flex flex-col gap-4 text-xl">
+                <p>La Escuela Superior de Comunicación Social y Diseño Gráfico es una institución de nivel terciario
+                    dedicada a la formación de profesionales en los campos de la comunicación social y el diseño
+                    gráfico. Con una sede principal ubicada en Guaná Nº 2130 esquina Dr. Joaquín Requena, y un anexo
+                    en
+                    Gaboto 1527, esta escuela se destaca por ofrecer programas educativos que preparan a los
+                    estudiantes
+                    para enfrentar los desafíos del mundo moderno.</p>
+                <p>Los estudiantes cursan la carrera terciaria denominada CTT - Curso Técnico Terciario, que otorga
+                    la
+                    certificación de Técnico en Diseño Gráfico y Comunicación Visual. Está dirigido a egresados de
+                    la
+                    Educación Media Superior en sus diferentes modalidades.</p>
+                <p>Al egresar podrán analizar, decodificar, diagnosticar, producir y evaluar diferentes tipos de
+                    comunicaciones visuales con un espíritu crítico, utilizando conscientemente herramientas
+                    conceptuales y tecnológicas.</p>
+                <p>Además, dominarán herramientas tecnológicas en constante actualización, adaptándose a las
+                    necesidades
+                    de la sociedad y el mundo laboral de manera ética y responsable. También serán capaces de
+                    generar
+                    estrategias y oportunidades en los campos cultural, profesional y productivo a través de la
+                    innovación, trabajando en sinergia con otras disciplinas. Finalmente, podrán analizar el
+                    desarrollo
+                    de tendencias en el ámbito de la cultura y la comunicación visual.</p>
+            </article>
+        </section>
+
+        <section id="proyecto"
+            class="content w-screen h-auto flex flex-col items-center justify-center py-16 bg-neutral-100">
+            <h2 class="text-3xl font-extrabold text-neutral-950">Proyectos<span class="text-blue-gem-800">
+                    personales</span></h2>
+            <section class="pt-32 w-screen h-3/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center"
                 id="container-img">
-
-                <figure class=" figure overflow-hidden  rounded-3xl w-4/5 h-full  flex flex-col  card items-center">
-                    <img src="img/foto-1.jpg" class=" img object-cover w-full h-full hover:scale-110 transition 1s"
-                        alt="">
+                <figure class="figure overflow-hidden rounded-3xl w-4/5 h-full flex flex-col card items-center">
+                    <img src="img/foto-1.jpg"
+                        class="img object-cover w-full h-full hover:scale-110 transition duration-1000" alt="">
                 </figure>
-                <figure class=" figure overflow-hidden  rounded-3xl  w-4/5 h-full  flex flex-col card  items-center">
-                    <img src="img/foto-2.jpg" class=" img object-cover w-full h-full hover:scale-110 transition 1s"
-                        alt="">
+                <figure class="figure overflow-hidden rounded-3xl w-4/5 h-full flex flex-col card items-center">
+                    <img src="img/foto-2.jpg"
+                        class="img object-cover w-full h-full hover:scale-110 transition duration-1000" alt="">
                 </figure>
-                <figure class=" figure overflow-hidden  rounded-3xl  w-4/5  h-full flex flex-col  card items-center">
-                    <img src="img/foto-3.jpg" class=" img object-cover w-full h-full hover:scale-110 transition 1s"
-                        alt="">
+                <figure class="figure overflow-hidden rounded-3xl w-4/5 h-full flex flex-col card items-center">
+                    <img src="img/foto-3.jpg"
+                        class="img object-cover w-full h-full hover:scale-110 transition duration-1000" alt="">
                 </figure>
             </section>
-
-            <button id="btn-img" class="text-neutral-50 text-2xl font-bold px-16 py-6 rounded-full bg-blue-gem-900 ">Ver
-                Mas</button>
+            <button id="btn-more" class="text-neutral-50 text-2xl font-bold px-20 py-6 rounded-full bg-blue-gem-900">Ver
+                más</button>
+            <button id="btn-less"
+                class="hidden text-neutral-50 text-2xl font-bold px-16 py-6 rounded-full bg-blue-gem-900">Ver
+                menos</button>
         </section>
-        <!-- <section class="w-screen h-screen flex items-center justify-center bg-neutral-900"></section> -->
     </main>
 
-    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <footer id="contacto" class="text-center text-lg-start text-white" style="background-color: #1c2331">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
             <!-- Left -->
@@ -130,16 +171,6 @@
                             El diseño gráfico fusiona creatividad, comunicación y tecnología para crear experiencias
                             significativas en un mundo visualmente conectado. </p>
                     </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-
-
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold">Contacto</h6>
@@ -157,6 +188,8 @@
         </p>
     </footer>
     <script src="main.js"></script>
+    <script src="parrafo.js"></script>
+
 </body>
 
 </html>
